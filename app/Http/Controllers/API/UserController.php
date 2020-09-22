@@ -88,6 +88,7 @@ class UserController extends Controller
         {
             $request->merge(['password'=>Hash::make($request['password'])]);
         }
+
         $user->update($request->all());
 
         return response(['message'=>'success']);

@@ -238,8 +238,7 @@
             });
 
             this.loadUser();
-            Fire.$on(
-                'refreshData',()=>{
+            Fire.$on('refreshData',()=>{
                     this.loadUser();
                 });
             /*setInterval(()=>this.loadUser(),3000);*/
